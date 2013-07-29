@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Javascript / Backbone.js Test</title>
+        
+        <script type="text/javascript" src="assets/vendor/jquery.js"></script>
+        <script type="text/javascript" src="assets/vendor/lodash.js"></script>
+        <script type="text/javascript" src="assets/vendor/backbone.js"></script>
+        <script type="text/javascript" src="assets/vendor/underscore.js"></script>
+        <script type="text/javascript" src="assets/vendor/backbone.localStorage.js"></script>
+		
+        <link rel="stylesheet" type="text/css" href="assets/style/main.css" />		
+    </head>
+
+<body style="padding: 40px">
+
+<section id="sectionppal" class="row">
+    <aside id="sidebar" class="span4">
+        <form class="form">
+            <div class="control-group">
+                <input id="user_name" type="text" placeholder="Name" />
+                <input id="user_position" type="text" placeholder="Position" />
+                <input id="user_food" type="text" placeholder="Favorite Food" />
+            </div>            
+            <input id="addbtn" class="btn" type="submit" value="Submit" onclick="addRow()">
+        </form>
+    </aside>
+    
+    <div id="content" class="span8">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Favorite Food</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="services" style="text-align: center">
+                <tr>
+                    <td>Bilbo</td>
+                    <td>Hobbit</td>
+                    <td>Bread and Butter</td>
+                    <td><a id="removeX" class="muted">X</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<script type="text/javascript" src="assets/javascript/models/datarowModel.js"></script>
+<script type="text/javascript" src="assets/javascript/collections/datarowsCollection.js"></script>
+<script type="text/javascript" src="assets/javascript/views/datarowsview.js"></script>
+
+<script type="text/javascript" src="app/main.js"></script>
+
+</body>
+</html>
